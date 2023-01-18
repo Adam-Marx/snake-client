@@ -15,7 +15,7 @@ const connect = function () {
   });
 
   conn.on('connect', () => {
-    console.log('Conncetion successfully established.');
+    console.log('Connection successfully established.');
   });
 
   conn.on('connect', () => {
