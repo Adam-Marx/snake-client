@@ -14,6 +14,13 @@ const connect = function () {
     console.log(data);
   });
 
+  conn.on('connect', () => {
+    console.log('Conncetion successfully established.');
+  });
+
+  conn.on('connect', () => {
+    conn.write('Name: MAD');
+  });
   return conn;
 
  
